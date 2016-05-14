@@ -105,7 +105,3 @@ Running `npm test` will run the unit tests with karma.
                         }
                 ]
         }
-
-
-
->>>>>>> 6a1021874e3baa561e22eaa5e856025697f1dac4
