@@ -1,4 +1,4 @@
-# ping-server
+# Mubble-server
 
 This project was generated with the [Angular Full-Stack Generator](https://github.com/DaftMonk/generator-angular-fullstack) version 3.6.1.
 
@@ -30,3 +30,82 @@ Run `grunt build` for building and `grunt serve` for preview.
 ## Testing
 
 Running `npm test` will run the unit tests with karma.
+
+## API
+
+* POST /search
+
+        body: {
+          id,
+          filters
+        }
+      returns a list of users
+
+* POST /users
+
+      create new user
+
+* UPDATE /users/:id
+
+      update user
+
+* GET /users/:id
+
+      returns the specified user
+
+* GET /games
+
+        returns all the games
+
+* GET /games/:id
+
+        returns specified game
+
+
+## Database
+
+* user:
+
+        {
+                id,
+                name,
+                email,
+                country,
+                age,
+                gender,
+                language,
+                gameList: [game]
+                description,
+                image
+        }
+
+* conversation:
+
+        {
+                id,
+                users: [],
+                messages:[
+                        {
+                                username,
+                                date,
+                                message
+                        }
+                ]
+        }
+
+* games:
+
+        {
+                id,
+                title,
+                filters: [
+                        {
+                                title,
+                                options: []
+                        }
+                ]
+        }
+
+
+
+>>>>>>> 6a1021874e3baa561e22eaa5e856025697f1dac4
