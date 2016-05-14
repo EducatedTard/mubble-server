@@ -67,7 +67,12 @@
         {
                 id,
                 title,
-                filters: []
+                filters: [
+                        {
+                                title,
+                                options: []
+                        }
+                ]
         }
 
 
