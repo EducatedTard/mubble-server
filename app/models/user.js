@@ -4,5 +4,5 @@ var mongoose = require('mongoose'),
 var UserSchema = new mongoose.Schema({
   name: String
 });
-console.log("ok");
+
 mongoose.model('User', UserSchema);
