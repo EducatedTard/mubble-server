@@ -2,10 +2,12 @@ var express = require('express'),
   config = require('./config/config'),
   glob = require('glob'),
   mongoose = require('mongoose'),
-  bodyParser = require('body-parser');
+  bodyParser = require('body-parser')
+  favicon = require('serve-favicon');
 
 var app = express();
 var bpjson = app.use(bodyParser.json());
+app.use(favicon(__dirname + '/public/img/favicon.ico'));
 
 mongoose.connect(config.db);
 var db = mongoose.connection;
