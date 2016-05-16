@@ -18,6 +18,10 @@ models.forEach(function (model) {
   require(model);
 });
 
+app.get('/favicon.ico', (res,req) => {
+  res.sendStatus(200);
+});
+
 app.get('/users', (req,res) => {
   mongoose.model('User').find(function(err, users){
     res.send(users);
